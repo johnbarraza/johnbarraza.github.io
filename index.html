@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV2D2RV4ZF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FV2D2RV4ZF');
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>JB Website</title>
@@ -57,8 +65,8 @@
       </nav>
 
       <div class="social-links text-center">
-        <a href="https://www.linkedin.com/in/john-barraza-ratachi" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/johnbarraza" class="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/john-barraza-ratachi" class="linkedin" onclick="gtag('event','click_social',{'platform':'LinkedIn'})"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/johnbarraza" class="GitHub" onclick="gtag('event','click_social',{'platform':'GitHub'})"><i class="bi bi-github"></i></a>
 
       </div>
 
@@ -93,8 +101,8 @@
                 </div>
 
                 <div class="social-links">
-                  <a href="https://github.com/johnbarraza"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/john-barraza-ratachi"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/johnbarraza" onclick="gtag('event','click_social',{'platform':'GitHub'})"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/john-barraza-ratachi" onclick="gtag('event','click_social',{'platform':'LinkedIn'})"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -210,7 +218,7 @@
               </div>
 
               <div class="cta-section">
-                <a href="assets\files\CV_John_Svante_Barraza_Ratachi.pdf" class="btn btn-primary">
+                <a href="assets\files\CV_John_Svante_Barraza_Ratachi.pdf" class="btn btn-primary" onclick="gtag('event', 'file_download', {'file_name': 'CV_John_Svante_Barraza_Ratachi.pdf', 'link_text': 'Download Resume'})">
                   <i class="bi bi-download"></i>
                   Download Resume
                 </a>
@@ -231,22 +239,18 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="stats-wrapper">
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
-                <div class="icon-wrapper">
-                  <i class="bi bi-journal-code"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Completed Courses</p>
-              </div><!-- End Stats Item -->
+        <div class="text-center mb-4" data-aos="fade-up">
+          <h3 style="font-weight:600; font-size:1.1rem; letter-spacing:0.08em; text-transform:uppercase; opacity:0.6;">2026 — So Far</h3>
+        </div>
 
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="stats-wrapper" style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap;">
               <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="icon-wrapper">
                   <i class="bi bi-github"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
                 <p>GitHub Projects</p>
               </div><!-- End Stats Item -->
 
@@ -254,7 +258,7 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-file-earmark-bar-graph"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Research Projects</p>
               </div><!-- End Stats Item -->
 
@@ -262,8 +266,8 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-book"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Books Read</p>
+                <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Books This Year</p>
               </div><!-- End Stats Item -->
             </div>
           </div>
@@ -615,14 +619,25 @@
               <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
 
               <div class="resume-item">
+                <h4>Research Assistant</h4>
+                <h5>Mar. 2025 - Present</h5>
+                <p class="company"><i class="bi bi-building"></i> CIUP – Centro de Investigación de la Universidad del Pacífico</p>
+                <ul>
+                  <li>Assist PhD Pia Basurto in research projects on leadership, education, and literature</li>
+                  <li>Conduct literature reviews and data collection for ongoing studies</li>
+                  <li>Support analysis and preparation of research outputs</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
                 <h4>RA on Behavioral Economics</h4>
-                <h5>2025 - Present</h5>
+                <h5>Jan. 2025 - Mar. 2025</h5>
                 <p class="company"><i class="bi bi-building"></i> BEX Consulting.</p>
                 <ul>
-                  <li>Conduct behavioral economics research and experimental design</li>
-                  <li>Analyze survey data and implement econometric models</li>
-                  <li>Support development of evidence-based policy recommendations</li>
-                  <li>Collaborate with cross-functional teams on research projects</li>
+                  <li>Conducted behavioral economics research and experimental design</li>
+                  <li>Analyzed survey data and implemented econometric models</li>
+                  <li>Supported development of evidence-based policy recommendations</li>
+                  <li>Collaborated with cross-functional teams on research projects</li>
                 </ul>
               </div>
 
@@ -708,8 +723,8 @@
         <!-- Download CV Button -->
         <div class="row mt-4">
           <div class="col-12 text-center">
-            <div class="cta-section">
-              <a href="assets\files\CV_John_Svante_Barraza_Ratachi.pdf" class="btn btn-primary">
+            <div class="cta-section justify-content-center">
+              <a href="assets\files\CV_John_Svante_Barraza_Ratachi.pdf" class="btn btn-primary" onclick="gtag('event', 'file_download', {'file_name': 'CV_John_Svante_Barraza_Ratachi.pdf', 'link_text': 'Download CV basic version'})">
                 <i class="bi bi-download"></i>
                 Download CV (basic version)
               </a>
@@ -1191,7 +1206,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
-        <p>Data science and economic research projects showcasing analytical skills and programming expertise</p>
+        <p>From economic research to real-world tools — projects that combine data, code, and impact</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1204,9 +1219,9 @@
                 <ul class="portfolio-filters isotope-filters">
                   <li data-filter="*" class="filter-active">All Projects</li>
                   <li data-filter=".filter-python">Python</li>
-                  <li data-filter=".filter-r">R</li>
-                  <li data-filter=".filter-stata">Stata</li>
                   <li data-filter=".filter-research">Research</li>
+                  <li data-filter=".filter-utilities">Utilities</li>
+                  <li data-filter=".filter-product">Product</li>
                 </ul>
               </div>
             </div>
@@ -1214,12 +1229,40 @@
             <div class="col-lg-9">
               <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
+                <div class="col-lg-6 col-md-6 isotope-item filter-product">
+                  <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s, box-shadow 0.3s; border-top: 3px solid #f39c12 !important;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(243,156,18,0.25)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge bg-primary">Product • FinTech</span>
+                        <div class="d-flex gap-1">
+                          <span class="badge" style="background:#f39c12;">⭐ Featured</span>
+                          <span class="badge bg-success">Live</span>
+                        </div>
+                      </div>
+                      <h4 class="card-title mb-3">SumaYa</h4>
+                      <p class="card-text text-muted">Personal finance management app for Spanish-speaking users in Peru. Track expenses via receipt scanning (OCR), voice input, or WhatsApp. Includes budgeting, goal-setting, and interest rate comparison tools.</p>
+                      <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-light text-dark border">FinTech</span>
+                        <span class="badge bg-light text-dark border">PWA</span>
+                        <span class="badge bg-light text-dark border">WhatsApp</span>
+                        <span class="badge bg-light text-dark border">OCR</span>
+                      </div>
+                      <a href="https://www.sumaya.lat/" class="btn btn-sm btn-outline-success" target="_blank">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> View Live
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
                 <div class="col-lg-6 col-md-6 isotope-item filter-python filter-research">
-                  <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+                  <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s, box-shadow 0.3s; border-top: 3px solid #f39c12 !important;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(243,156,18,0.25)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
                     <div class="card-body p-4">
                       <div class="d-flex justify-content-between align-items-start mb-2">
                         <span class="badge bg-primary">MATLAB • Research</span>
-                        <span class="badge bg-warning text-dark">In Progress</span>
+                        <div class="d-flex gap-1">
+                          <span class="badge" style="background:#f39c12;">⭐ Featured</span>
+                          <span class="badge bg-warning text-dark">In Progress</span>
+                        </div>
                       </div>
                       <h4 class="card-title mb-3">Heterogeneous Agent Model - Bachelor's Thesis</h4>
                       <p class="card-text text-muted">Extension of the Aiyagari (1994) framework to continuous-time with endogenous labor supply across two sectors. Using finite difference methods (Achdou et al., 2021) to analyze wealth inequality and sectoral employment dynamics in the Peruvian economy.</p>
@@ -1340,6 +1383,97 @@
                     </div>
                   </div>
                 </div>End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 isotope-item filter-utilities filter-python">
+                  <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge bg-secondary">Python • Utility</span>
+                        <span class="badge bg-success">Completed</span>
+                      </div>
+                      <h4 class="card-title mb-3">MatriculaUp</h4>
+                      <p class="card-text text-muted">Intelligent schedule planner for course enrollment at Universidad del Pacífico. Plans up to 3 simultaneous schedules with automatic conflict detection, credit limit validation, and export to Excel or PNG.</p>
+                      <p class="text-success fw-semibold mb-2"><i class="bi bi-people-fill me-1"></i> 1,000+ students helped</p>
+                      <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-light text-dark border">Python</span>
+                        <span class="badge bg-light text-dark border">Gradio</span>
+                        <span class="badge bg-light text-dark border">Pandas</span>
+                        <span class="badge bg-light text-dark border">Matplotlib</span>
+                      </div>
+                      <a href="https://github.com/johnbarraza/MatriculaUp" class="btn btn-sm btn-outline-primary me-2" target="_blank">
+                        <i class="bi bi-github me-1"></i> View on GitHub
+                      </a>
+                      <a href="https://johnbarraza.github.io/MatriculaUp/" class="btn btn-sm btn-outline-success" target="_blank">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> View Live
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 isotope-item filter-python filter-research">
+                  <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge bg-primary">Python • AI • Research</span>
+                        <span class="badge bg-warning text-dark">In Progress</span>
+                      </div>
+                      <h4 class="card-title mb-3">Top Papers Creator</h4>
+                      <p class="card-text text-muted">Automated pipeline for creating submission-ready economics papers via AI-human workflow. Covers 7 stages from literature discovery to journal submission, with Claude AI integration and support for causal inference designs (DiD, IV, RDD).</p>
+                      <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-light text-dark border">Python</span>
+                        <span class="badge bg-light text-dark border">Claude AI</span>
+                        <span class="badge bg-light text-dark border">LaTeX</span>
+                      </div>
+                      <a href="https://github.com/johnbarraza/Top_papers_creator" class="btn btn-sm btn-outline-primary" target="_blank">
+                        <i class="bi bi-github me-1"></i> View on GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 isotope-item filter-python filter-product">
+                  <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge bg-primary">Python • AI • Health</span>
+                        <span class="badge bg-warning text-dark">In Progress</span>
+                      </div>
+                      <h4 class="card-title mb-3">FarmaciaAI</h4>
+                      <p class="card-text text-muted">WhatsApp bot + web app helping chronic patients in Lima find affordable medications. Scan a prescription, compare prices across 15 districts, and visualize pharmacies on an interactive map. Built in 11 days, YC-validated idea.</p>
+                      <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-light text-dark border">Python</span>
+                        <span class="badge bg-light text-dark border">Gemini Vision</span>
+                        <span class="badge bg-light text-dark border">FastAPI</span>
+                        <span class="badge bg-light text-dark border">WhatsApp</span>
+                      </div>
+                      <a href="https://github.com/johnbarraza/farmacia-ai" class="btn btn-sm btn-outline-primary" target="_blank">
+                        <i class="bi bi-github me-1"></i> View on GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 isotope-item filter-utilities filter-python">
+                  <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge bg-secondary">Python • Utility</span>
+                        <span class="badge bg-success">Completed</span>
+                      </div>
+                      <h4 class="card-title mb-3">UPBlackboardSync</h4>
+                      <p class="card-text text-muted">Desktop app and browser extension (Chrome/Firefox) that automates downloading course materials from Blackboard Learn at Universidad del Pacífico. Keeps all course content synced locally.</p>
+                      <p class="text-success fw-semibold mb-2"><i class="bi bi-people-fill me-1"></i> 150+ students benefited</p>
+                      <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-light text-dark border">Python</span>
+                        <span class="badge bg-light text-dark border">JavaScript</span>
+                        <span class="badge bg-light text-dark border">Browser Extension</span>
+                      </div>
+                      <a href="https://github.com/johnbarraza/UPBlackboardSync" class="btn btn-sm btn-outline-primary" target="_blank">
+                        <i class="bi bi-github me-1"></i> View on GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
 
               </div><!-- End Portfolio Container -->
             </div>
@@ -1679,7 +1813,7 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn" onclick="gtag('event','contact_form_submit',{'event_category':'Contact'})">Send Message</button>
                   </div>
 
                 </div>
@@ -1733,6 +1867,21 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('#portfolio a[href], #research a[href]');
+      if (!btn) return;
+      var label = btn.innerText.trim() || btn.getAttribute('href');
+      var card = btn.closest('.card, .research-item');
+      var project = card ? (card.querySelector('h4') || {}).innerText : '';
+      gtag('event', 'click_project_link', {
+        'project': project,
+        'link_text': label,
+        'url': btn.getAttribute('href')
+      });
+    });
+  </script>
 
 </body>
 
